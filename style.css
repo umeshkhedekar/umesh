@@ -528,14 +528,13 @@ color: #FFFFFF; /* White color for text */
   
 }
 .box-2{
-    width:1000px;
+    width:550px;
     height:80px;
     background: #1b2028;
    margin-left:11%;
    margin-top: -6px;
-   border-radius:30px;
-   border-bottom-left-radius:0;
-   border-top-left-radius:0;
+  
+  
 }
 
 
@@ -678,7 +677,7 @@ color: #FFFFFF; /* White color for text */
     .About-text h3{
         color: #fff;
        margin-top:80px;
-      
+      margin-left:-40px;
        font-size:21px;
        font-family: 'FontName', sans-serif; /* Replace 'FontName' with the identified font name */
       
@@ -686,7 +685,7 @@ color: #FFFFFF; /* White color for text */
     }
     .About-text h6{
         color: #FFBF00;
-      
+       margin-left:-40px;
         margin-top:10px;
         font-size: 20px;
         font-family: 'FontName', sans-serif; /* Replace 'FontName' with the identified font name */
@@ -695,9 +694,9 @@ color: #FFFFFF; /* White color for text */
     }
     .About-text p{
         color: #9b9999;
-        margin-left:-600px;
+        margin-left:-40px;
         margin-top:8px;
-        width: 350px;
+        width: 330px;
        font-size: 12px;
     }
     .ppp{
@@ -708,7 +707,7 @@ color: #FFFFFF; /* White color for text */
     }
     .About-text{
         width:300px;
-        margin-left:610px;
+        margin-left:20px;
        
     }
     .About-text span{
@@ -981,7 +980,7 @@ color: #FFFFFF; /* White color for text */
 @media (max-width: 790px){
     .title-service{
         color: #fff;
-        margin-top:230px;
+        margin-top:190px;
     }
     .title-service h3{
         margin-top:-20px;
@@ -1230,8 +1229,8 @@ color: #FFFFFF; /* White color for text */
     #backToTop {
         position: fixed;
         bottom: 20px;
-        left:50px;
-        width: 150px;
+        left:290px;
+        width: 50px;
         padding: 10px ;
         font-size: 16px;
         background-color: #007BFF;
