@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 100px 20px;
+            margin-top: 60px; /* Offset for the fixed navbar */
+        }
+
+        .home {
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .about {
+            height: 100vh;
+            background-color: #ddd;
+        }
+
+        .contact {
+            height: 100vh;
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <h1>Home</h1>
+        <p>Welcome to the homepage!</p>
+    </section>
+
+    <section id="about" class="about">
+        <h1>About</h1>
+        <p>This is the About section. Smooth scrolling works when you click the "About" link in the navbar.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <p>Feel free to reach out to us!</p>
+    </section>
+
+    <script>
+        // Optional: Add event listeners for extra functionality (if needed)
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
